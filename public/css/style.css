@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Krub', sans-serif;
+}
+
+.custom-nav {
+    font-weight: 500;
+}
+
+.jumbotron {
+    width: 100vw;
+    height: 500px;
+    background-image: url('../images/tech-blog-dim.jpg');
+    background-size: cover;
+    opacity: 1;
+}
+
+header .container {
+    height: 100%;
+}
+
+.heading h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
