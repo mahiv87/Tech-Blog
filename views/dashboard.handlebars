@@ -1,0 +1,40 @@
+<div class='container d-flex flex-wrap flex-lg-nowrap justify-content-center mt-5'>
+    <div class='col-md-6 mx-3 mb-5 px-3'>
+        <h2>Create a New Post</h2>
+
+        <form class='form new-project-form'>
+            <div class='form-group mb-3 row'>
+                <label for='project-name'>project name:</label>
+                <input class='form-input' type='text' id='project-name' name='project-name' />
+            </div>
+            <div class='form-group mb-3 row'>
+                <label for='project-desc'>description:</label>
+                <textarea class='form-input' id='project-desc' name='project-desc'></textarea>
+            </div>
+            <div class='form-group text-center'>
+                <button type='submit' class='btn btn-primary'>Create</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- {{#if projects.length}} -->
+            <div class="col col-md-6 mx-2 mb-5 px-3 project-list">
+                <h2>Current Posts</h2>
+
+                <!-- {{#each projects as |project|}} -->
+                <div class="row mb-3">
+                    <div class="col-8">
+                        <h4>
+                            <a class="nav-link text-secondary" href="/project/{{project.id}}">First Post of Many</a>
+                        </h4>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
+                    </div>
+                </div>
+                <!-- {{/each}} -->
+            </div>
+            <!-- {{/if}} -->
+</div>
+
+<script src='./js/profile.js'></script>
