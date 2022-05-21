@@ -17,24 +17,24 @@
         </form>
     </div>
 
-    <!-- {{#if projects.length}} -->
-            <div class="col col-md-6 mx-2 mb-5 px-3 project-list">
-                <h2>Current Posts</h2>
+    {{#if posts.length}}
+        <div class='col col-md-6 mx-2 mb-5 px-3 project-list'>
+            <h2>Current Posts</h2>
 
-                <!-- {{#each projects as |project|}} -->
-                <div class="row mb-3">
-                    <div class="col-8">
+            {{#each posts as |post|}}
+                <div class='row mb-3'>
+                    <div class='col-8'>
                         <h4>
-                            <a class="nav-link text-secondary" href="/project/{{project.id}}">First Post of Many</a>
+                            <a class='nav-link text-secondary' href='/project/{{post.id}}'>First Post of Many</a>
                         </h4>
                     </div>
-                    <div class="col-4">
-                        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
+                    <div class='col-4'>
+                        <button class='btn btn-sm btn-danger' data-id='{{post.id}}'>DELETE</button>
                     </div>
                 </div>
-                <!-- {{/each}} -->
-            </div>
-            <!-- {{/if}} -->
+            {{/each}}
+        </div>
+    {{/if}}
 </div>
 
 <script src='./js/profile.js'></script>
