@@ -1,0 +1,16 @@
+{{#each posts as |post|}}
+    <div class='post col-md-10 mx-auto'>
+        <a class='nav-link post-item' href='#'>
+            <h2 class='post-title text-dark'>{{post.name}}</h2>
+            <h4 class='post-subtitle text-dark'>{{post.description}}</h4>
+        </a>
+        <p class='post-meta text-secondary fst-italic'>
+            Posted by
+            <span class='user'>{{post.user.name}}</span>
+            on
+            <span class='date'>{{format_date project.date_created}}</span>
+        </p>
+    </div>
+
+    <hr class='my-4' />
+{{/each}}
