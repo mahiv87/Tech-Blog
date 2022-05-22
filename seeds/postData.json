@@ -2,6 +2,7 @@
     {
         "title": "Tech Blog",
         "description": "My first Full Stack project",
-        "content": "Welcome to Tech Blog! This is my first Full Stack project. I've learned a lot since starting this course. I look forward to creating many more applications, and I invite you to follow me along my journey!"
+        "content": "Welcome to Tech Blog! This is my first Full Stack project. I've learned a lot since starting this course. I look forward to creating many more applications, and I invite you to follow me along my journey!",
+        "user_id": 1
     }
 ]

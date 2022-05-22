@@ -6,17 +6,17 @@
     },
     {
         "name": "Aragorn",
-        "email": "aragorn@lor.org",
+        "email": "aragorn@lotr.org",
         "password": "password123456"
     },
     {
         "name": "Legolas",
-        "email": "legolas@lor.org",
+        "email": "legolas@lotr.org",
         "password": "password123456"
     },
     {
         "name": "Gimli",
-        "email": "gimli@lor.org",
+        "email": "gimli@lotr.org",
         "password": "password123456"
     }
 ]
