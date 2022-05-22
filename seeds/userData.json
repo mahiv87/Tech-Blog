@@ -3,5 +3,20 @@
         "name": "Marcus",
         "email": "maherreraiv1987@gmail.com",
         "password": "password123456"
+    },
+    {
+        "name": "Aragorn",
+        "email": "aragorn@lor.org",
+        "password": "password123456"
+    },
+    {
+        "name": "Legolas",
+        "email": "legolas@lor.org",
+        "password": "password123456"
+    },
+    {
+        "name": "Gimli",
+        "email": "gimli@lor.org",
+        "password": "password123456"
     }
 ]

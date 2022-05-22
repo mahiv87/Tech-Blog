@@ -1,0 +1,17 @@
+[
+    {
+        "comment": "You have my sword!",
+        "post_id": 1,
+        "user_id": 2
+    },
+    {
+        "comment": "And you have my bow!",
+        "post_id": 1,
+        "user_id": 3
+    },
+    {
+        "comment": "And my axe!",
+        "post_id": 1,
+        "user_id": 4
+    }
+]
