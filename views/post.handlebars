@@ -1,0 +1,86 @@
+<header class="jumbotron">
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="heading text-white">
+            <h1>{{post.title}}</h1>
+            <p class="subheading text-center">{{post.description}}</p>
+        </div>
+    </div>
+</header>
+
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="blog col-md-8">
+        <div class="post">
+            <p class="content">
+                {{post.content}} Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dolor odio
+                reprehenderit laborum molestias praesentium nihil necessitatibus accusamus, voluptatum,
+                perspiciatis quam voluptatem a autem culpa nesciunt ipsum ad id commodi earum voluptas beatae
+                possimus eius sit labore? Ea, totam sint? Qui, reprehenderit at aut temporibus atque dolores?
+                Illo, maxime possimus! Vel fuga, similique alias perferendis autem, fugiat adipisci quam id sed
+                maxime nesciunt voluptatum repellendus necessitatibus accusamus quas eos! Ipsa quaerat molestiae
+                distinctio libero maxime eveniet non sapiente laudantium, dolore quod perferendis. Fuga sunt,
+                esse nobis consequatur temporibus similique voluptate aperiam quaerat, non quia mollitia.
+                Expedita ipsa, ratione aperiam accusamus et officiis dolores, soluta nam delectus deleniti ipsam
+                provident harum consequuntur. Rerum porro soluta veritatis architecto doloribus autem neque,
+                laudantium, ipsam dolorum obcaecati distinctio voluptatibus corporis, eos iusto quo quidem culpa
+                molestiae! Dolorem ullam consequatur officiis placeat rerum voluptatum aspernatur at accusamus
+                repellat aliquid assumenda iure dolor atque, totam mollitia quasi reiciendis harum beatae odio
+                quibusdam esse magni velit! Sint voluptatem nulla unde similique minima harum, modi numquam ex
+                reiciendis nobis. Voluptates, quisquam pariatur quia tempora labore ea laboriosam hic laudantium
+                inventore ex repudiandae in. Non quisquam beatae eaque maiores magnam, hic similique autem
+                impedit laborum pariatur, quibusdam aperiam illo temporibus facilis consequuntur aut quod,
+                libero veniam modi minima? Magni, assumenda voluptate perferendis molestiae voluptatem molestias
+                alias, deleniti praesentium commodi aliquam eligendi architecto cum, fugit facere obcaecati
+                ipsam pariatur sapiente porro voluptas! Deserunt ex iste distinctio corrupti similique doloribus
+                quod voluptatem fuga tempore dolorum corporis exercitationem iusto voluptas eveniet porro
+                reiciendis velit, assumenda neque consequatur incidunt, veniam libero sit aspernatur illo? Nisi
+                consequuntur quidem quae obcaecati, atque explicabo odit illum nulla? Aut nam impedit eaque
+                mollitia, facere similique non neque itaque adipisci repudiandae architecto harum dolore aliquam
+                molestias ratione corporis, atque consequatur totam? Fugit, natus quibusdam facilis voluptates
+                quia asperiores.
+            </p>
+            <p class="post-meta text-secondary fst-italic">
+                Posted by
+                <span class="user">{{post.user.name}}</span>
+                on
+                <span class="date">{{format_date post.date_created}}</span>
+            </p>
+        </div>
+
+        <hr class="my-4" />
+        {{#if comments.length}}
+        <div class="container d-flex flex-wrap flex-lg-nowrap justify-content-center mt-5">
+            <div class="col-md-8 mx-3 mb-5 px-3">
+                <h3>Comments</h3>
+                <hr class="my-4" />
+
+                {{#each comments as |comment|}}
+                <div class="comment">
+                    <p>
+                        {{comment.comment}}
+                    </p>
+                    <p class="post-meta text-secondary fst-italic">
+                        Posted by
+                        <span class="user">{{user.name}}</span>
+                        on
+                        <span class="date">{{format_date comment.date_created}}</span>
+                    </p>
+                    <hr class="my-4" />
+                </div>
+                {{/each}}
+
+                <form class="form new-comment-form">
+                    <div class="form-group mb-3 row">
+                        <label for="comment-content">leave a comment:</label>
+                        <textarea class="form-input" id="comment-content" name="comment-content"></textarea>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary">Comment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        {{/if}}
+    </div>
+</div>
+
+<script src="./js/comment.js"></script>
