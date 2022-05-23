@@ -1,7 +1,7 @@
 <header class='jumbotron'>
     <div class='container d-flex justify-content-center align-items-center'>
         <div class='heading text-white'>
-            <h1>Welcome, {{user.name}}</h1>
+            <h1>Welcome, {{name}}</h1>
         </div>
     </div>
 </header>
@@ -37,7 +37,7 @@
                 <div class='row mb-3'>
                     <div class='col-8'>
                         <h4>
-                            <a class='nav-link text-secondary' href='/post/{{post.id}}'>First Post of Many</a>
+                            <a class='nav-link text-secondary' href='/post/{{post.id}}'>{{post.title}}</a>
                         </h4>
                     </div>
                     <div class='col-4'>
