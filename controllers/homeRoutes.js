@@ -49,7 +49,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
     }
 });
 
-// Single post
+// Single blog post
 router.get('/posts/:id', async (req, res) => {
     try {
         const postData = await Post.findByPk(req.params.id, {
