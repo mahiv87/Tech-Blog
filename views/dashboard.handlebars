@@ -40,7 +40,12 @@
                             <a class='nav-link text-secondary' href='/posts/{{post.id}}'>{{post.title}}</a>
                         </h4>
                     </div>
-                    <div class='col-4'>
+                    <div class='col-2 edit-button'>
+                        <a href='/posts/{{post.id}}'>
+                            <button class='btn btn-sm btn-warning' data-id='{{post.id}}'>Edit</button>
+                        </a>
+                    </div>
+                    <div class='col-2 delete-button'>
                         <button class='btn btn-sm btn-danger' data-id='{{post.id}}'>DELETE</button>
                     </div>
                 </div>
