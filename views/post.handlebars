@@ -9,16 +9,17 @@
 
 <div class='container mt-5 d-flex justify-content-center'>
     <div class='blog col-md-8'>
-        <div class='post'>
+        <div class='post row mx-1'>
             <p class='content'>
                 {{content}}
             </p>
-            <p class='post-meta text-secondary fst-italic'>
+            <p class='col-10 post-meta text-secondary fst-italic'>
                 Posted by
                 <span class='user'>{{user.name}}</span>
                 on
                 <span class='date'>{{format_date date_created}}</span>
             </p>
+            <button class='col-2 btn btn-sm btn-outline-secondary edit-button' data-id='{{post.id}}'>Edit</button>
         </div>
 
         <hr class='my-4' />
