@@ -1,0 +1,25 @@
+<header class='jumbotron'>
+    <div class='container d-flex justify-content-center align-items-center'>
+        <div class='heading text-white'>
+            <h1>{{title}}</h1>
+            <p class='subheading text-center'>{{description}}</p>
+        </div>
+    </div>
+</header>
+
+<div class='container d-flex flex-wrap flex-lg-nowrap justify-content-center mt-5'>
+    <div class='col-md-6 mx-3 mb-5 px-3'>
+        <h2 class="text-center">Edit Post</h2>
+
+        <form class='form edit-post-form' id='edit-content' data-id='{{id}}'>
+            <div class='form-group mb-3 row'>
+                <label for='post-content'>content:</label>
+                <textarea class='form-input' id='post-content' name='post-content' rows="20">{{content}}</textarea>
+            </div>
+            <div class='form-group text-center'>
+                <button type='submit' class='btn btn-primary'>Save</button>
+            </div>
+        </form>
+    </div>
+
+    <script src='/js/edit.js'></script>
