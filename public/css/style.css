@@ -23,3 +23,50 @@ header .container {
     font-size: 4.5rem;
     font-weight: 700;
 }
+
+.fade-in-1 {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.fade-in-2 {
+    animation-name: fade-in-2;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.fade-main {
+    animation-name: fade-main;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-2 {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-main {
+    to {
+        opacity: 1;
+    }
+}
