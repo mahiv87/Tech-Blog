@@ -15,7 +15,7 @@
 
 ## Description
 
-Tech Blog is a CMS-style blog site, where developers can publish their blog posts and comment on other developers' posts as well
+Tech Blog is a CMS blog site, where developers can publish their blog posts and comment on other developers' posts as well
 
 ## Technologies
 
